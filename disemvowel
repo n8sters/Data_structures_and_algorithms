@@ -1,0 +1,12 @@
+ function disemvowel(string) {
+     var test = string.split("");
+     for( i = 0; i < test.length;i++ ) {
+         if( test[i].match(["a|e|i|o|u"])) {
+             test[i] = "";
+         }
+     }
+     var result = test.join("");
+     return result;
+ }
+ 
+ console.log(disemvowel("ruby"));
