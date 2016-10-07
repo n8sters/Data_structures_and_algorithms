@@ -1,0 +1,11 @@
+function oddballSums(numbers) {
+    var results = 0;
+    for(i = 0; i < numbers.length; i ++ ) {
+        if ( numbers[i] % 2 !== 0 ) {
+        results += numbers[i];
+        } 
+    }
+    return results;
+}
+
+console.log(oddballSums([1,2,1]));
